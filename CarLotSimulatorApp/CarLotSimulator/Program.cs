@@ -20,8 +20,17 @@ namespace CarLotSimulator
 
             //Now that the Car class is created we can instanciate 3 new cars
             Car Debbie = new Car();
+            TheCarLot.AddCarNumber();
+            TheCarLot.PrintCarsAmount();
+            
             Car Luis = new Car();
+            TheCarLot.AddCarNumber();
+            TheCarLot.PrintCarsAmount();
+            
             Car Nkkii = new Car();
+            TheCarLot.AddCarNumber();
+            TheCarLot.PrintCarsAmount();
+            Console.WriteLine("\n");
 
             //Set the properties for each of the cars
             Debbie.Name = "Debbie";
@@ -58,10 +67,12 @@ namespace CarLotSimulator
             Debbie.MakeEngineNoise(Debbie.Name, Debbie.EngineNoise);
             Luis.MakeEngineNoise(Luis.Name, Luis.EngineNoise);
             Nkkii.MakeEngineNoise(Nkkii.Name, Nkkii.EngineNoise);
+            Console.WriteLine("\n");
             
             Debbie.MakeHonkNoise(Debbie.Name, Debbie.HonkNoise);
             Luis.MakeHonkNoise(Luis.Name, Luis.HonkNoise);
             Nkkii.MakeHonkNoise(Nkkii.Name, Nkkii.HonkNoise);
+            Console.WriteLine("\n");
 
             //*************BONUS*************//
 
@@ -78,10 +89,15 @@ namespace CarLotSimulator
             };
             
             TheCarLot.CarList.Add(TheJaclyn);
+            TheCarLot.AddCarNumber();
+            TheCarLot.PrintCarsAmount();
             
             Car Furrawri = new Car("Furrawri", 1976, "ABBA", "Fernando", "Pleasantly Loud", "Catchy", true);
             
             TheCarLot.CarList.Add(Furrawri);
+            TheCarLot.AddCarNumber();
+            TheCarLot.PrintCarsAmount();
+            Console.WriteLine("\n");
             // {
             //     Name = "Furrawri",
             //     Year = 1976,
